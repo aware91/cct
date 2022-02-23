@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import utilStyles from '../styles/utils.module.css'
 import AddBar from '../components/addBar'
+import Nav from '../components/nav'
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <Head>
         <title>Center Creek Teardrops</title>
       </Head>
+      {/* Navbar */}
+      <Nav />
       {/* Top section with logo */}
       <div className={utilStyles.heading}>
         <Image 
