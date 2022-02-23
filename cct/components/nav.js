@@ -20,9 +20,19 @@ export default function Nav() {
                 <Link href='/ourStory'>
                     <a>Our Story</a>
                 </Link>
-                <Link href='/'>
-                    <a>Trailers</a>
-                </Link>
+                <div className={utilStyles.dropdown}>
+                    <Link href='/' className={utilStyles.dropbtn}>
+                        <a>Trailers</a>
+                    </Link>
+                    <div className={utilStyles.dropdownContent}>
+                        <Link href='/trailers/bigMackLittleMack'>
+                            <a>Big Mack & Little Mack</a>
+                        </Link>
+                        <Link href='/trailers/tinyMack'>
+                            <a>Tiny Mack</a>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </div>
     )
