@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import utilStyles from '../styles/utils.module.css'
+import AddBar from '../components/addBar'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Head>
         <title>Center Creek Teardrops</title>
       </Head>
+      {/* Top section with logo */}
       <div className={utilStyles.heading}>
         <Image 
           src='/images/logo.png'
@@ -18,10 +20,13 @@ export default function Home() {
         <h1>Destination Everywhere</h1>
         <h3>Get ready to experience your passion on the road.</h3>
       </div>
+      {/* Address Bar */}
+      <AddBar />
+      {/* First section talking about Center Creek Teardrops */}
       <div>
-        <p className={utilStyles.addBar}>
-          Center Creek Teardrops Trailers & Campers • 806 Joplin Street • Carl Junction, Missouri 64834 • tel. (417) 649-6000
-        </p>
+        <h3>CENTER CREEK CUSTOM TEARDROP CAMPERS</h3>
+        <p>At Center Creek Teardrops, we believe it’s important to never forget to set time aside to get away from it all, whether for just a weekend or going for extended time period.  The ability to explore and recenter ourselves with the things we enjoy should become a priority.  At Center Creek Teardrops, we have created custom teardrop campers perfect for just about anyone. With the ability to personalize nearly every element of our lightweight campers and follow their production, you’ll be ready to hit the road in no time.  </p>
+        <h4>Welcome to a new experience on the road. </h4>
       </div>
     </div>
   )
