@@ -1,0 +1,40 @@
+.heading {
+    height: 500px;
+    background-image: url('../public/images/OR-mnt.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 
+        2px 0px 0px black,
+        -2px 0px 0px black,
+        0px 2px 0px black, 
+        0px -2px 0px black;
+}
+
+.heading h3 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 
+        2px 0px 0px black,
+        -2px 0px 0px black,
+        0px 2px 0px black, 
+        0px -2px 0px black;
+}
+
+.addBar {
+    color: white;
+    background-color: #021731;
+    margin: 0%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px 0;
+}
