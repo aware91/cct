@@ -6,7 +6,7 @@ import Nav from '../components/nav'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Center Creek Teardrops</title>
       </Head>
@@ -31,6 +31,6 @@ export default function Home() {
         <p>At Center Creek Teardrops, we believe it’s important to never forget to set time aside to get away from it all, whether for just a weekend or going for extended time period.  The ability to explore and recenter ourselves with the things we enjoy should become a priority.  At Center Creek Teardrops, we have created custom teardrop campers perfect for just about anyone. With the ability to personalize nearly every element of our lightweight campers and follow their production, you’ll be ready to hit the road in no time.  </p>
         <h4>Welcome to a new experience on the road. </h4>
       </div>
-    </div>
+    </>
   )
 }
