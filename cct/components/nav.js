@@ -24,10 +24,10 @@ export default function Nav() {
                     </Link>
                     <div className='dropdown'>
                         <Link href='/' className='dropbtn'>
-                            <a>Trailers</a>
+                            <a>Trailers ▼</a>
                         </Link>
                         <div className='dropdownContent'>
-                            <Link href='/trailers/bigMackLittleMack'>
+                            <Link href='/trailers/bLMack'>
                                 <a>Big Mack & Little Mack</a>
                             </Link>
                             <Link href='/trailers/tinyMack'>
@@ -51,18 +51,20 @@ export default function Nav() {
                     justify-content: space-between;
                     align-items: center;
                     background-color:rgb(0,0,0,0.2);
+                    position: fixed; 
+                    top: 0;
+                    width: 98.75%;
                 }
                 .img {
-                    border: 1px solid blue;
                     width: auto;
                 }
                 .links {
-                    border: 1px solid red;
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: space-between;
                     align-items: center;
                     width: 50%;
+                    margin-right: 10px
                 }
                 /* Links inside the navbar */
                 .navbar a {
@@ -73,7 +75,11 @@ export default function Nav() {
                     padding: 14px 16px;
                     text-decoration: none;
                 }
-                
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.15rem;
+                }
                 /* The dropdown container */
                 .dropdown {
                     float: left;
@@ -92,18 +98,11 @@ export default function Nav() {
                     margin: 0; /* Important for vertical align on mobile phones */
                 }
                 
-                /* Add a red background color to navbar links on hover */
-                .navbar a:hover, .dropdown:hover .dropbtn {
-                    background-color: red;
-                }
-                
                 /* Dropdown content (hidden by default) */
                 .dropdownContent {
                     display: none;
                     position: absolute;
-                    background-color: #f9f9f9;
                     min-width: 160px;
-                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1;
                 }
                 
@@ -111,10 +110,11 @@ export default function Nav() {
                 .dropdownContent a {
                     float: none;
                     color: black;
-                    padding: 12px 16px;
+                    padding: 12px 0;
                     text-decoration: none;
                     display: block;
                     text-align: left;
+                    color: white;
                 }
                 
                 /* Add a grey background color to dropdown links on hover */
