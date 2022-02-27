@@ -40,10 +40,21 @@
     padding: 15px 0;
 }
 
-/* h6 {
+.sect1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid orange;
-} */
+    width: 100%;
+    padding: 20px 0;
+}
+
+.sect2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #031332;
+}

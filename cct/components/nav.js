@@ -53,7 +53,7 @@ export default function Nav() {
                     background-color:rgb(0,0,0,0.2);
                     position: fixed; 
                     top: 0;
-                    width: 98.75%;
+                    width: 100%;
                 }
                 .img {
                     width: auto;
@@ -79,6 +79,11 @@ export default function Nav() {
                     color: white;
                     text-decoration: none;
                     font-size: 1.15rem;
+                    text-shadow: 
+                        2px 0px 0px black,
+                        -2px 0px 0px black,
+                        0px 2px 0px black, 
+                        0px -2px 0px black;
                 }
                 /* The dropdown container */
                 .dropdown {
