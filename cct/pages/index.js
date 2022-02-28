@@ -5,6 +5,7 @@ import AddBar from '../components/addBar'
 import Nav from '../components/nav'
 import HomeSS from '../components/homeSS'
 import HomeModels from '../components/homeModels'
+import Footer from '../components/footer'
 
 export default function Home() {
     return (
@@ -63,6 +64,9 @@ export default function Home() {
                 </div>
                 <div>
                     <HomeModels />
+                </div>
+                <div>
+                    <Footer />
                 </div>
             </section>
             <style jsx>{`
