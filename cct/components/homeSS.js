@@ -4,36 +4,45 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default function HomeSlideShow() {
     return (
-        <div id="carouselExampleSlidesOnly" class="carousel slide relative" data-bs-ride="carousel">
-            <div class="carousel-inner relative w-full overflow-hidden">
-                <div class="carousel-item active relative float-left w-full">
+        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
                 <Image 
                     src="/images/logo.png" 
-                    class="block w-full" 
+                    className="d-block w-100" 
                     alt="..."
                     width={200}
                     height={200}
                 />
                 </div>
-                <div class="carousel-item active relative float-left w-full">
+                <div className="carousel-item">
                 <Image 
                     src="/images/OR-mnt.jpeg" 
-                    class="block w-full"
+                    className="d-block w-100" 
                     alt="..."
                     width={200}
                     height={200}
                 />
                 </div>
-                <div class="carousel-item active relative float-left w-full">
+                <div className="carousel-item">
                 <Image 
                     src="/images/vintageBigMack.jpg" 
-                    class="block w-full"
+                    className="d-block w-100" 
                     alt="..."
                     width={200}
                     height={200}
                 />
                 </div>
             </div>
-        </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+            </div>
     )
 }
+

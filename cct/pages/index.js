@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import AddBar from '../components/addBar'
 import Nav from '../components/nav'
 import HomeSS from '../components/homeSS'
+import HomeModels from '../components/homeModels'
 
 export default function Home() {
     return (
@@ -52,6 +53,16 @@ export default function Home() {
                 </div>
                 <div className='sect2Img'>
                 <HomeSS />
+                </div>
+            </section>
+            {/* Trailer options */}
+            <section>
+                <div>
+                    <h3>The first step? Choosing a make and size.</h3>
+                    <h5>Take a look at our offered camper models/</h5>
+                </div>
+                <div>
+                    <HomeModels />
                 </div>
             </section>
             <style jsx>{`
