@@ -60,9 +60,9 @@ export default function Home() {
             </section>
             {/* Trailer options */}
             <section className={utilStyles.sect3}>
-                <div>
+                <div className='sect3Words'>
                     <h3>The first step? Choosing a make and size.</h3>
-                    <h5>Take a look at our offered camper models/</h5>
+                    <h5>Take a look at our offered camper models.</h5>
                 </div>
                 <div className='sect3HomeModels'>
                     <HomeModels />
@@ -109,6 +109,15 @@ export default function Home() {
                 
                 .sect3HomeModels {
                     width: 100%;
+                }
+
+                .sect3Words {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-items: center;
+                    height: 275px;
+                    width: 75%;
                 }
             `}</style>
         </div>

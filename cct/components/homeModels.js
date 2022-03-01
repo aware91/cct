@@ -11,8 +11,8 @@ export default function HomeModels() {
                     <Image 
                             src="/images/vintageBigMack.jpg" 
                             alt="..."
-                            width={300}
-                            height={200}
+                            width={500}
+                            height={350}
                             className={utilStyles.modelImg}
                     />
                 </Link>
@@ -93,7 +93,6 @@ export default function HomeModels() {
         </section>
         <style jsx>{`
             .models {
-                border: 1px solid red;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
@@ -103,12 +102,16 @@ export default function HomeModels() {
             .model {
                 width: 45%;
                 color: white;
-                border: 1px solid blue;
                 display: flex;
                 flex-flow: column wrap;
                 justify-content: center;
                 align-items: center;
-                font-size: 2.5rem;
+            }
+
+            .model h6 {
+                color: white;
+                font-size: 2rem;
+                margin: 20px 0;
             }
         `}</style>
         </>
