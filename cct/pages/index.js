@@ -29,9 +29,9 @@ export default function Home() {
             </div>
             {/* Address Bar */}
             <AddBar />
-            <TestCarousel />
+            {/* <TestCarousel /> */}
             {/* First section talking about Center Creek Teardrops */}
-            <section className={utilStyles.sect1}>
+            {/* <section className={utilStyles.sect1}>
             <div className='sect1Img'>
                     <Image 
                         src='/images/vintageBigMack.jpg'
@@ -46,9 +46,9 @@ export default function Home() {
                     <h4>Welcome to a new experience on the road. </h4>
                 </div>
                 
-            </section>
+            </section> */}
             {/* Second Section */}
-            <section className={utilStyles.sect2}>
+            {/* <section className={utilStyles.sect2}>
                 <div className='sect2Par'>
                     <p>Do you ever go look at teardrops and think, I like that, but not that?  I love the trailer, but I wish I could use that space for something else.  At Center Creek Teardrops, we custom build for each customer.  We sit down and discuss how and where you will be using your teardrop.</p>
                     <p>We have single ladies that want something lightweight and easy to pull to a regular campsite.  We have couples that want to go off-roading and explore where there are no roads. We have others that want to travel, and golf on courses throughout the country.  We have a photographer/videographer that can travel and work where the whim takes him, and we have a couples that wanted to have something to pull behind their trike.</p>
@@ -57,9 +57,9 @@ export default function Home() {
                 <div className='sect2Img'>
                 <HomeSS />
                 </div>
-            </section>
+            </section> */}
             {/* Trailer options */}
-            <section className={utilStyles.sect3}>
+            {/* <section className={utilStyles.sect3}>
                 <div className='sect3Words'>
                     <h3>The first step? Choosing a make and size.</h3>
                     <h5>Take a look at our offered camper models.</h5>
@@ -67,13 +67,13 @@ export default function Home() {
                 <div className='sect3HomeModels'>
                     <HomeModels />
                 </div>
-            </section>
+            </section> */}
             {/* Footer */}
-            <section>
+            {/* <section>
                 <div>
                     <Footer />
                 </div>
-            </section>
+            </section> */}
             <style jsx>{`
                 .sect1Par {
                     width: 45%;
