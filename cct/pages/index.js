@@ -6,6 +6,7 @@ import Nav from '../components/nav'
 import HomeSS from '../components/homeSS'
 import HomeModels from '../components/homeModels'
 import Footer from '../components/footer'
+import TestCarousel from '../components/testCarousel'
 
 export default function Home() {
     return (
@@ -28,6 +29,7 @@ export default function Home() {
             </div>
             {/* Address Bar */}
             <AddBar />
+            <TestCarousel />
             {/* First section talking about Center Creek Teardrops */}
             <section className={utilStyles.sect1}>
             <div className='sect1Img'>
@@ -57,14 +59,17 @@ export default function Home() {
                 </div>
             </section>
             {/* Trailer options */}
-            <section>
+            <section className={utilStyles.sect3}>
                 <div>
                     <h3>The first step? Choosing a make and size.</h3>
                     <h5>Take a look at our offered camper models/</h5>
                 </div>
-                <div>
+                <div className='sect3HomeModels'>
                     <HomeModels />
                 </div>
+            </section>
+            {/* Footer */}
+            <section>
                 <div>
                     <Footer />
                 </div>
@@ -100,6 +105,10 @@ export default function Home() {
                     flex-flow: row;
                     align-items: center;
                     justify-content: center;
+                }
+                
+                .sect3HomeModels {
+                    width: 100%;
                 }
             `}</style>
         </div>

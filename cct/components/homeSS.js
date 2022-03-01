@@ -1,48 +1,89 @@
 import Image from 'next/image'
-import 'bootstrap/dist/css/bootstrap.css'
 
 
 export default function HomeSlideShow() {
     return (
-        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
+        <div>
+            <div classNameName='pic-ctn'>
+                <div classNameName="carousel-item active">
                 <Image 
                     src="/images/logo.png" 
-                    className="d-block w-100" 
+                    classNameName="pic" 
                     alt="..."
                     width={200}
                     height={200}
                 />
                 </div>
-                <div className="carousel-item">
+                <div classNameName="carousel-item">
                 <Image 
                     src="/images/OR-mnt.jpeg" 
-                    className="d-block w-100" 
+                    classNameName="pic" 
                     alt="..."
                     width={200}
                     height={200}
                 />
                 </div>
-                <div className="carousel-item">
+                <div classNameName="carousel-item">
                 <Image 
                     src="/images/vintageBigMack.jpg" 
-                    className="d-block w-100" 
+                    classNameName="pic" 
                     alt="..."
                     width={200}
                     height={200}
                 />
                 </div>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
-            </div>
+            <style jsx>{`
+                .pic-ctn {
+                    width: 100vw;
+                    height: 200px;
+                    }
+                    
+                @keyframes display {
+                    0% {
+                    transform: translateX(200px);
+                    opacity: 0;
+                    }
+                    10% {
+                    transform: translateX(0);
+                    opacity: 1;
+                    }
+                    20% {
+                    transform: translateX(0);
+                    opacity: 1;
+                    }
+                    30% {
+                    transform: translateX(-200px);
+                    opacity: 0;
+                    }
+                    100% {
+                    transform: translateX(-200px);
+                    opacity: 0;
+                    }
+                }
+                
+                .pic-ctn {
+                    position: relative;
+                    width: 100vw;
+                    height: 300px;
+                    margin-top: 15vh;
+                }
+                
+                .pic-ctn > img {
+                    position: absolute;
+                    top: 0;
+                    left: calc(50% - 100px);
+                    opacity: 0;
+                    animation: display 10s infinite;
+                }
+                
+                img:nth-child(2) {
+                    animation-delay: 2s;
+                }
+                img:nth-child(3) {
+                    animation-delay: 4s;
+                }
+            `}</style>
+        </div>
     )
 }
-

@@ -23,7 +23,7 @@ export default function Nav() {
                         <a>Our Story</a>
                     </Link>
                     <div className='dropdown'>
-                        <Link href='/' className='dropbtn'>
+                        <Link href='/trailers' className='dropbtn'>
                             <a>Trailers ▼</a>
                         </Link>
                         <div className='dropdownContent'>
