@@ -53,13 +53,23 @@
     display: block;
 }
 
-.heading {
-    height: 500px;
-    width: 100%;
+.homeBGImg {
     background-image: url('../public/images/OR-mnt.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.trailerBGImg {
+    background-image: url('../public/images/vintageBigMack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.heading {
+    height: 500px;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -138,4 +148,15 @@
 
 .modelImg {
     border-radius: 25px;
+}
+
+.trailerSect2 {
+    background-image: url('../public/images/raod2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }

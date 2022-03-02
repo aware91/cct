@@ -17,21 +17,23 @@ export default function Home() {
             {/* Navbar */}
             <Nav />
             {/* Top section with logo */}
-            <div className={utilStyles.heading}>
-                <Image 
-                src='/images/logo.png'
-                alt='Center Creek Teardrops Logo'
-                height={200}
-                width={200}
-                />
-                <h1>Destination Everywhere</h1>
-                <h3>Get ready to experience your passion on the road.</h3>
+            <div className={utilStyles.homeBGImg}>
+                <div className={utilStyles.heading}>
+                    <Image 
+                    src='/images/logo.png'
+                    alt='Center Creek Teardrops Logo'
+                    height={200}
+                    width={200}
+                    />
+                    <h1>Destination Everywhere</h1>
+                    <h3>Get ready to experience your passion on the road.</h3>
+                </div>
             </div>
             {/* Address Bar */}
             <AddBar />
             {/* <TestCarousel /> */}
             {/* First section talking about Center Creek Teardrops */}
-            {/* <section className={utilStyles.sect1}>
+            <section className={utilStyles.sect1}>
             <div className='sect1Img'>
                     <Image 
                         src='/images/vintageBigMack.jpg'
@@ -46,9 +48,9 @@ export default function Home() {
                     <h4>Welcome to a new experience on the road. </h4>
                 </div>
                 
-            </section> */}
+            </section>
             {/* Second Section */}
-            {/* <section className={utilStyles.sect2}>
+            <section className={utilStyles.sect2}>
                 <div className='sect2Par'>
                     <p>Do you ever go look at teardrops and think, I like that, but not that?  I love the trailer, but I wish I could use that space for something else.  At Center Creek Teardrops, we custom build for each customer.  We sit down and discuss how and where you will be using your teardrop.</p>
                     <p>We have single ladies that want something lightweight and easy to pull to a regular campsite.  We have couples that want to go off-roading and explore where there are no roads. We have others that want to travel, and golf on courses throughout the country.  We have a photographer/videographer that can travel and work where the whim takes him, and we have a couples that wanted to have something to pull behind their trike.</p>
@@ -57,9 +59,9 @@ export default function Home() {
                 <div className='sect2Img'>
                 <HomeSS />
                 </div>
-            </section> */}
+            </section>
             {/* Trailer options */}
-            {/* <section className={utilStyles.sect3}>
+            <section className={utilStyles.sect3}>
                 <div className='sect3Words'>
                     <h3>The first step? Choosing a make and size.</h3>
                     <h5>Take a look at our offered camper models.</h5>
@@ -67,14 +69,28 @@ export default function Home() {
                 <div className='sect3HomeModels'>
                     <HomeModels />
                 </div>
-            </section> */}
+            </section>
             {/* Footer */}
-            {/* <section>
+            <section>
                 <div>
                     <Footer />
                 </div>
-            </section> */}
+            </section>
             <style jsx>{`
+                .heading {
+                    height: 500px;
+                    width: 100%;
+                    background-image: url('../public/images/OR-mnt.jpeg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 80px;
+                }
+
                 .sect1Par {
                     width: 45%;
                     margin-right: 15px;
