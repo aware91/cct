@@ -25,15 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/trailers": [
+    "/ourStory": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/trailers.js"
-    ],
-    "/trailers/bLMack": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/trailers/bLMack.js"
+      "static/chunks/pages/ourStory.js"
     ]
   },
   "ampFirstPages": []

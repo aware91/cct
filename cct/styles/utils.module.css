@@ -67,6 +67,32 @@
     background-position: center center;
 }
 
+.ourStoryBGImg {
+    background-image: url('../public/images/road3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    color: black;
+}
+
+.ourStoryWords {
+    background-color:rgb(195,216,230,0.75);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+}
+
 .heading {
     height: 600px;
     width: 100%;
