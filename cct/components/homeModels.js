@@ -23,10 +23,10 @@ export default function HomeModels() {
             <div className='model'>
                 <Link href='/trailers/tinyMack'>
                     <Image 
-                            src="/images/logo.png"  
+                            src="/images/tinyMack.png"  
                             alt="..."
-                            width={200}
-                            height={200}
+                            width={500}
+                            height={350}
                             className={utilStyles.modelImg}
                     />
                 </Link>
@@ -37,10 +37,10 @@ export default function HomeModels() {
             <div className='model'>
                 <Link href='/trailers/vagabond'> 
                     <Image 
-                            src="/images/logo.png"  
+                            src="/images/vagabond2.jpg"  
                             alt="..."
-                            width={200}
-                            height={200}
+                            width={500}
+                            height={350}
                             className={utilStyles.modelImg}
                     />
                 </Link>
@@ -51,10 +51,10 @@ export default function HomeModels() {
             <div className='model'>
                 <Link href='/trailers/offRoader'>
                     <Image 
-                            src="/images/logo.png"  
+                            src="/images/OR.jpg"  
                             alt="..."
-                            width={200}
-                            height={200}
+                            width={500}
+                            height={350}
                             className={utilStyles.modelImg}
                     />
                 </Link>
@@ -67,8 +67,8 @@ export default function HomeModels() {
                     <Image 
                             src="/images/logo.png"  
                             alt="..."
-                            width={200}
-                            height={200}
+                            width={500}
+                            height={350}
                             className={utilStyles.modelImg}
                     />
                 </Link>
@@ -79,10 +79,10 @@ export default function HomeModels() {
             <div className='model'>
                 <Link href='/trailers/specialTrailer'>
                     <Image 
-                            src="/images/logo.png"  
+                            src="/images/vagabond.jpg"  
                             alt="..."
-                            width={200}
-                            height={200}
+                            width={500}
+                            height={350}
                             className={utilStyles.modelImg}
                     />
                 </Link>
@@ -112,6 +112,11 @@ export default function HomeModels() {
                 color: white;
                 font-size: 2rem;
                 margin: 20px 0;
+                text-shadow: 
+                        1px 0px 0px black,
+                        -1px 0px 0px black,
+                        0px 1px 0px black, 
+                        0px -1px 0px black;
             }
         `}</style>
         </>
