@@ -5,6 +5,7 @@ import Link from 'next/link'
 export default function HomeModels() {
     return (
         <>
+        
         <section className='models'>
             <div className='model'>
                 <Link href='/trailers/bLMack'>
