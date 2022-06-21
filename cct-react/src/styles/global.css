@@ -1,0 +1,15 @@
+.addBar {
+  color: white;
+  background-color: #021731;
+  margin: 0%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.title {
+  background-image: url('../assets//OR-mnt.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
